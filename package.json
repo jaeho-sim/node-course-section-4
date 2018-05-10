@@ -1,0 +1,22 @@
+{
+  "name": "course-section-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simjh0919/node-course-section-4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simjh0919/node-course-section-4/issues"
+  },
+  "homepage": "https://github.com/simjh0919/node-course-section-4#readme",
+  "dependencies": {
+    "request": "^2.85.0"
+  }
+}
