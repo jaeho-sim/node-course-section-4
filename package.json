@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/simjh0919/node-course-section-4#readme",
   "dependencies": {
-    "request": "^2.85.0"
+    "request": "^2.85.0",
+    "yargs": "^11.0.0"
   }
 }
