@@ -21,15 +21,15 @@ geocode.geocodeAddress(argv.address, (errorMessage, results) => {
     console.log(errorMessage);
   }
   else {
-    console.log(JSON.stringify(results, undefined, 2));
+    console.log(results.address);
+    weather.getWeather(43.66721090000001,-79.3891532, (errorMessage, weatherResults) => {
+      if(errorMessage) {
+        console.log(errorMessage);
+      }
+      else {
+        console.log(`Its currently ${weatherResults.temperature}. It feels like ${weatherResults.apparentTemperature}.`);
+      }
+    });
   }
 });
 
-weather.getWeather(43.66721090000001,-79.3891532, (errorMessage, weatherResults) => {
-  if(errorMessage) {
-    console.log(errorMessage);
-  }
-  else {
-    console.log(JSON.stringify(weatherResults, undefined, 2));
-  }
-});
